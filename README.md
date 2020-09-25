@@ -1,2 +1,2 @@
-# geekbrains
-Geek University Game Development
+# Geekbrains
+My Geek University Game Development Course Materials
