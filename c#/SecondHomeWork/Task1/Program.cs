@@ -39,7 +39,6 @@ namespace Task1
             double minValue = getMax(a, b, c);
 
             Console.WriteLine(minValue);
-            Console.ReadKey();
         }
     }
 }

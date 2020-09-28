@@ -21,8 +21,8 @@ namespace Task3
                     if (inputNumber > 0 && inputNumber % 2 != 0)
                     {
                         sum = sum + inputNumber;
-
                     }
+
                     if (inputNumber == 0)
                     {
                         repeat = false;

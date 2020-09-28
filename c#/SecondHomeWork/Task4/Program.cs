@@ -12,12 +12,7 @@ namespace Task4
         
         static bool isValidInfo(string login, string password)
         {
-            if (login == "root" && password== "GeekBrains")
-            {
-                return true;
-            }
-
-            return false;
+            return login == "root" && password == "GeekBrains";
         }
         static void Main(string[] args)
         {
@@ -26,15 +21,17 @@ namespace Task4
             {
                 Console.WriteLine("Enter login");
                 string login = Console.ReadLine();
+
                 Console.WriteLine("Enter password");
                 string password = Console.ReadLine();
+
                 if (isValidInfo(login, password))
                 {
                     break;
                 }
-                Console.WriteLine("Incorrect input, try again!");
-                attemptsNumber--;
 
+                attemptsNumber--;
+                Console.WriteLine("Incorrect data entered, you have {0} attempts left", attemptsNumber);
             } while (attemptsNumber > 0);
         }
     }

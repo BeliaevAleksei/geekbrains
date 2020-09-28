@@ -26,10 +26,7 @@ namespace Task2
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(getNumberDigits(10));
-            Console.WriteLine(getNumberDigits(1));
-            Console.WriteLine(getNumberDigits(123));
-            Console.Read();
+            Console.WriteLine(getNumberDigits(106));
         }
     }
 }
