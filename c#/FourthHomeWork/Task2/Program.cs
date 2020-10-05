@@ -1,6 +1,5 @@
 ﻿using System;
-using System;
-using System.IO; // Обязательно еще одно пространство имен.
+using System.IO;
 
 namespace Task2
 {
