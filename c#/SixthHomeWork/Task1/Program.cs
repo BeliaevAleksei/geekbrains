@@ -8,9 +8,6 @@ namespace Task1
     public delegate double Fun(double a, double x);
     class Program
     { 
-        // Создаем метод, который принимает делегат
-        // На практике этот метод сможет принимать любой метод
-        // с такой же сигнатурой, как у делегата
         public static void Table(Fun F, double a, double x, double b)
         {
             Console.WriteLine("----- X ----- Y -----");
@@ -21,7 +18,7 @@ namespace Task1
             }
             Console.WriteLine("---------------------");
         }
-        // Создаем метод для передачи его в качестве параметра в Table
+
         public static double MyFunc(double a, double x)
         {
             return a * x * x;
@@ -29,11 +26,8 @@ namespace Task1
 
         static void Main()
         {
-            Console.WriteLine("Таблица функции MyFunc:");
-            Table(new Fun(MyFunc), 2, -2, 2);
-            Console.WriteLine("Еще раз та же таблица, но вызов организован по новому");     
+            Table(new Fun(MyFunc), 2, -2, 2);   
             Table(MyFunc, 2, -2, 2);
-            Console.WriteLine("Таблица функции Sin:");
             Table(delegate (double a, double x) { return a * Math.Sin(x); }, 1, 0, 3);
         }
     }
